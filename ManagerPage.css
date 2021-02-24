@@ -1,0 +1,22 @@
+body {
+    background-color: darkcyan;
+}
+.stock, .Advertise, .Budget, .Menu {
+    position: relative;
+    color: wheat;
+    background-color: #A9D18E;
+    font-size: 24px;
+    width: 120px;
+}
+button.LogOUT {
+    position: absolute;
+    top: 3%;
+    left: 95%;
+    color: wheat;
+    background-color: #A9D18E;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
+button > a {
+    color: wheat;
+}

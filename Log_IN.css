@@ -1,0 +1,50 @@
+body {
+    background-color: darkcyan;
+}
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    color: #FFC000;
+}
+div.UsernameBox, div.PasswordBox {
+    width: 382px;
+    height: 34px;
+    color: wheat;
+    background-color: whitesmoke;
+    border: 3px solid skyblue;
+    font-size: 30px;
+}
+.UsernameBox {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.PasswordBox {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div > a {
+    position: absolute;
+    top: 53%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+div > .button {
+    position: absolute;
+    top: 53%;
+    left: 59.8%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+    background-color: #A9D18E;
+    font-size: 23px;
+}
+div > button > a {
+    color: wheat;
+}
