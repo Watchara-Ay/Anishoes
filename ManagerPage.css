@@ -1,7 +1,11 @@
 body {
-    background-color: darkcyan;
+    background-image: url('https://media3.giphy.com/media/ejcoQeKAnFab6/giphy.gif?cid=ecf05e47bkzerldf068e9itl6ww1irgrj9esmo75mz10ixd8&rid=giphy.gif');
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: center;
+    height: 400px;
 }
-.stock, .Advertise, .Budget, .Menu {
+header > .stock, .Advertise, .Budget, .Menu {
     position: relative;
     color: wheat;
     background-color: #A9D18E;
@@ -19,4 +23,13 @@ button.LogOUT {
 }
 button > a {
     color: wheat;
+}
+div {
+    width: 100%;
+    height: 400px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    opacity: 0.7;
 }

@@ -1,17 +1,65 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="ManagerPage.css">
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <button class="Stock">Stock</button>
-        <button class="Advertise">Advertise</button>
-        <button class="Budget">Budget</button>
-        <button class="Menu">Menu</button>
-        <button class="LogOUT">
-            <a href="index.html">Log OUT</a>
-        </button>
-    </body>
+<head>
+  <link rel="stylesheet" href="ManagerPage.css">
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <button class="Stock" onclick="Stock()">Stock</button>
+    <button class="Advertise" onclick="Advertise()">Advertise</button>
+    <button class="Budget" onclick="Budget()">Budget</button>
+    <button class="Menu" onclick="Menu()">Menu</button>
+    <button class="LogOUT">
+      <a href="index.html">Log OUT</a>
+    </button>
+  </header>
+  <script>
+    function Stock() {
+      var x = document.getElementById("StockHide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Advertise() {
+      var x = document.getElementById("AdHide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Budget() {
+      var x = document.getElementById("BudHide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Menu() {
+      var x = document.getElementById("MenuHide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <div id="StockHide">
+    <p>This is Stock hiding page.</p>
+  </div>
+  <div id="AdHide">
+    <p>This is Advertise hiding page.</p>
+  </div>
+  <div id="BudHide">
+    <p>This is Budget hiding page.</p>
+  </div>
+  <div id="MenuHide">
+    <p>This is Menu hiding page.</p>
+  </div>
+</body>
 </html>

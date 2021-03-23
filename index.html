@@ -5,15 +5,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <h1 style="">Log IN</h1>
-        <div class="UsernameBox"></div>
-        <div class="PasswordBox"></div>
+    <body >
+        <main role="main"></main>
+        <h1>Log IN</h1>
+        <div class="UsernameBox">
+            <input type="text" id="Username" value="Username">
+        </div>
+        <div class="PasswordBox">
+            <input type="text" id="Password" value="Password">
+        </div>
         <div>
-            <a href="url">Forget Password?</a>
-            <button class="button button">
-                <a href="ManagerPage.html">Submit</a>
+            <button class="button button" onclick="Check()">
+                Submit</a>
             </button>
         </div>
+        <script>
+            var User = document.getElementById("Username").Value;
+            var Password = document.getElementById("Password").value;
+            function Check(){
+                if (User.charAt(0) !== "M" && User.charAt(1) !== "1"){
+                document.getElementById("Username").value = "Error";
+            }
+            }
+        </script>
     </body>
 </html>
