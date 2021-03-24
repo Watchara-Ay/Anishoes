@@ -1,15 +1,44 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="MainPage.css">
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <div id="headerBox">
-                SmartGuy
+
+<head>
+    <link rel="stylesheet" href="MainPage.css">
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="ManagerPage.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit"><a href="ManagerPage.html">Login</a></button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div id="main">
+        <div id="article">
+            <div id="Example1">
+                <p>Naruto Shoes</p>
+                <img src="Naruto.jpg" alt="NarutoShoes" style="width:40%;">
             </div>
-        </header>
-    </body>
+            <div id="Example2">
+                <p>Limited Edition Boa Hancock Shoes</p>
+                <img src="Boa.jpg" alt="BoaShoes" style="width:40%;">
+            </div>
+        </div>
+    </div>
+</body>
 </html>
