@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anishoes</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="ManagerPage.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit"><a href="about.html">Login</a></button>
+                </div>
+            </form>
+        </div>
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="store.html">STORE</a></li>
+                <li><button onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</button></li>
+            </ul>
+        </nav>
+        <h1 class="band-name band-name-large">Anishoes</h1>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">Shoes</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Nezuko Kamado Shoes</span>
+                <img class="shop-item-image" src="Nezuko.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3600 </span><br>
+                    <button class="btn btn-primary shop-item-button" type="button"><br>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Boa Hancock Shoes</span>
+                <img class="shop-item-image" src="Boa.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3700</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Donquixote Doflamingo Shoes</span>
+                <img class="shop-item-image" src="Doflamingo.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3600</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Gon Freecss Shoes</span>
+                <img class="shop-item-image" src="Gon.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3400</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Zenitsu Agatsuma Shoes</span>
+                <img class="shop-item-image" src="Zenitsu.jpg" style="width: 50%;">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3600</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Itachi Uchiha Shoes</span>
+                <img class="shop-item-image" src="Itachi.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3700</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Anishoes</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
